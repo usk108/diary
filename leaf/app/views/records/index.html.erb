@@ -1,0 +1,11 @@
+<h1>Diary</h1>
+<div class="row">
+  <div class="span6 offset3">
+	<% if @records.any? %>
+ 		<ol class="records">
+			<%= render @records %>
+		</ol>
+	<% end %>
+    <%= link_to "new", new_record_path %>
+  </div>
+</div>

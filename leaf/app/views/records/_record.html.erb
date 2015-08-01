@@ -1,0 +1,8 @@
+<li>
+  <span class="date"><%= record.date %></span>
+  <% if record.memo.present? %>
+	<span class="memo"><%= markdown record.memo.sentence %></span>  
+  <% end %>
+  <%= link_to "new", new_record_memo_path(record.id) %>
+  <%= link_to "edit", edit_memo_path(record.memo.id) %>
+</li>

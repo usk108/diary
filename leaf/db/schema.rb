@@ -13,14 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20150729032808) do
 
-  create_table "memos", force: true do |t|
-    t.text     "sentence"
+  create_table "memos", force: :cascade do |t|
+    t.text     "sentence",   limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "record_id"
+    t.integer  "record_id",  limit: 4
   end
 
-  create_table "records", force: true do |t|
+  create_table "records", force: :cascade do |t|
     t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
