@@ -1,0 +1,19 @@
+<% if @memos.any? %>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="col-xs-4">Date</th>
+        <th class="col-xs-8">Memo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= @result_html.html_safe %>
+      <% @memos.each do |memo| %>
+      <tr>
+        <td><%= memo.record.date %></td>
+        <td><%= memo.sentence %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

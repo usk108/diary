@@ -46,7 +46,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 gem 'redcarpet'
 
-gem 'nested_form'
+gem 'ransack'
 
 
 group :development, :test do
@@ -62,4 +62,5 @@ gem 'hirb-unicode', group: [:development, :test]
 gem 'better_errors', group: [:development, :test]
 gem 'binding_of_caller', group: [:development, :test]
 
-
+#サンプルデータ作成用
+gem 'faker', group: [:development, :test]

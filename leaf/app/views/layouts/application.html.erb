@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header class="navbar navbar-default" role="navigation">
+  	<div class="container">
+  	  <div class="navbar-header">
+  	  	<%= link_to "Diary", root_path, class: 'navbar-brand' %>
+  	  </div>
+  	</div>
+  </header>
+  <div class="container">
+	<%= form_tag({controller: :memos, action: :search}, class: "form-inline") do %>
+	  <%= text_field_tag :keyword, '', size: '100%', class: "form-control", placeholder: "keyword" %>
+	  <%= button_tag(type: "submit", class: "btn btn-default") do %>
+	  Search <i class="fa fa-search"></i>
+	  <% end %>
+	<% end %>
+	<%= yield %>
+  </div>
 </body>
 </html>

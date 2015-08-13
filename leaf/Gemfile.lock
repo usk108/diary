@@ -62,6 +62,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.5.2)
+    faker (1.4.3)
+      i18n (~> 0.5)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -88,9 +90,10 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.2)
     mysql2 (0.3.19)
-    nested_form (0.3.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    polyamorous (1.2.0)
+      activerecord (>= 3.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -134,6 +137,12 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    ransack (1.6.6)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      i18n
+      polyamorous (~> 1.2)
     rdoc (4.2.0)
       json (~> 1.4)
     redcarpet (3.3.2)
@@ -180,17 +189,18 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.2.0)
   bootstrap-will_paginate (= 0.0.9)
   coffee-rails (~> 4.0.0)
+  faker
   hirb
   hirb-unicode
   jbuilder (~> 2.0)
   jquery-rails
   mysql2
-  nested_form
   pry-byebug
   pry-doc
   pry-rails
   pry-stack_explorer
   rails
+  ransack
   redcarpet
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

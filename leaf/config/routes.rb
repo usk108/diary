@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'records#index'
+  match 'memos/search', to: 'memos#search', via: ['post', 'get']
 
   resources :records, shallow: true do
     resources :memos
