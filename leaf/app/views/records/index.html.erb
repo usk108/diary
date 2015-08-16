@@ -1,11 +1,12 @@
 <h1>Diary</h1>
 <div class="row">
   <div class="span6 offset3">
+    <%= link_to "新規作成", new_record_path %>
 	<% if @records.any? %>
  		<ol class="records">
 			<%= render @records %>
 		</ol>
 	<% end %>
-    <%= link_to "new", new_record_path %>
+  	<%= paginate @records %>
   </div>
 </div>

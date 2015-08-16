@@ -1,3 +1,4 @@
+<%= @result_html.html_safe %>
 <% if @memos.any? %>
   <table class="table table-hover">
     <thead>
@@ -7,7 +8,6 @@
       </tr>
     </thead>
     <tbody>
-      <%= @result_html.html_safe %>
       <% @memos.each do |memo| %>
       <tr>
         <td><%= memo.record.date %></td>
