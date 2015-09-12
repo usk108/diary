@@ -1,0 +1,48 @@
+
+
+Started GET "/records" for ::1 at 2015-09-13 00:38:49 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (15.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RecordsController#index as HTML
+  [1m[35m (2.3ms)[0m  SELECT COUNT(*) FROM `records`
+  [1m[36mRecord Load (0.8ms)[0m  [1mSELECT  `records`.* FROM `records`  ORDER BY id DESC LIMIT 7 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `records`
+  [1m[36mMemo Load (2.1ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 24 LIMIT 1[0m
+  [1m[35mMemo Load (0.5ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 23 LIMIT 1
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 22 LIMIT 1[0m
+  [1m[35mMemo Load (0.4ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 21 LIMIT 1
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 20 LIMIT 1[0m
+  [1m[35mMemo Load (0.4ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 19 LIMIT 1
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 18 LIMIT 1[0m
+  Rendered records/_record.html.erb (58.0ms)
+  Rendered records/index.html.erb within layouts/application (715.0ms)
+Completed 200 OK in 5043ms (Views: 4570.4ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/memos.css?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/records.css?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/records.js?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/memos.js?body=1" for ::1 at 2015-09-13 00:38:55 +0900
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-09-13 00:38:55 +0900
