@@ -1,7 +1,7 @@
 <h1><%= @record.show_date %>のメモ作成</h1>
 <%= form_for [@record, @record.build_memo] do |f|%>
   <div class="field">
-    <%= f.text_area :sentence, :size => "40x10" %>
+    <%= f.text_area :sentence, :size => "30x10" %>
   </div>
   <div class="actions">
     <%= f.submit %>

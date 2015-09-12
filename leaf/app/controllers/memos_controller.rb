@@ -5,29 +5,31 @@ class MemosController < ApplicationController
 	end
 
 	def create
-        @record = Record.find(params[:record_id])
-        # binding.pry
-        @memo = @record.create_memo(memo_params)
-        # binding.pry
-        redirect_to records_path
-    end
+    @record = Record.find(params[:record_id])
+    @memo = @record.build_memo(memo_params)
+    if @memo.save
+	    redirect_to root_path
+	  else
+	  	render :new
+	  end
+  end
 
 	def edit
-		# binding.pry
 		@memo = Memo.find(params[:id])
 	end
 
 	def update
 		@memo = Memo.find(params[:id])
-		@memo.update(memo_params)
-        redirect_to records_path
+		if @memo.update(memo_params)
+			redirect_to records_path
+		else
+	    render :edit
+	  end
 	end
 
 	def search
-	    keyword = params[:keyword]
-	    @memos = Memo.search(:sentence_cont => keyword).result
-
-		#@result = Nokogiri::XML::Node::new('div', search_html)
+    keyword = params[:keyword]
+    @memos = Memo.search(:sentence_cont => keyword).result
 
 		res_html = "<h2>#{keyword}-検索結果</h2>"
 		@result = Nokogiri::HTML.parse(res_html)
