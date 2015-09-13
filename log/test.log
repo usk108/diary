@@ -1,0 +1,311 @@
+  [1m[36mActiveRecord::SchemaMigration Load (16.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (17.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMemo Exists (8.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 279 LIMIT 1[0m
+  [1m[35m (3.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.4ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 280 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `memos` (`sentence`, `record_id`, `created_at`, `updated_at`) VALUES ('# 研究\r\n## アイデア\r\n- アイデアその1-1\r\n- アイデアその2-1\r\n- アイデアその3-1\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-1\r\n- 研究相談-1\r\n\r\n## DONE\r\n- プロトタイプ作成-1\r\n', 280, '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 280 LIMIT 1[0m
+  [1m[35m (4.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 281 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by RecordsController#index as HTML
+  Rendered records/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-06 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-07 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by RecordsController#index as HTML
+  Rendered records/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36mRecord Load (1.0ms)[0m  [1mSELECT  `records`.* FROM `records`  ORDER BY id DESC LIMIT 7 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.2ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 285 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (285, 'old sentence', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#update as HTML
+  Parameters: {"memo"=>{"sentence"=>nil}, "id"=>"152"}
+  [1m[36mMemo Load (1.6ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 152 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (1.9ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE (`memos`.`record_id` = BINARY 285 AND `memos`.`id` != 152) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered memos/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 2.9ms | ActiveRecord: 3.9ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 286 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (286, 'old sentence', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MemosController#update as HTML
+  Parameters: {"memo"=>{"sentence"=>nil}, "id"=>"153"}
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 153 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.4ms)[0m  SELECT  1 AS one FROM `memos` WHERE (`memos`.`record_id` = BINARY 286 AND `memos`.`id` != 153) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered memos/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 153 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 287 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (287, 'old sentence', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MemosController#update as HTML
+  Parameters: {"memo"=>{"sentence"=>"new sentence"}, "id"=>"154"}
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 154 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.3ms)[0m  SELECT  1 AS one FROM `memos` WHERE (`memos`.`record_id` = BINARY 287 AND `memos`.`id` != 154) LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mUPDATE `memos` SET `sentence` = 'new sentence', `updated_at` = '2015-09-13 07:13:29' WHERE `memos`.`id` = 154[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/records
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 154 LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.3ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 288 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (288, 'old sentence', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#update as HTML
+  Parameters: {"memo"=>{"sentence"=>"# 研究\r\n## アイデア\r\n- アイデアその1-4\r\n- アイデアその2-4\r\n- アイデアその3-4\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-4\r\n- 研究相談-4\r\n\r\n## DONE\r\n- プロトタイプ作成-4\r\n"}, "id"=>"155"}
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 155 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE (`memos`.`record_id` = BINARY 288 AND `memos`.`id` != 155) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `memos` SET `sentence` = '# 研究\r\n## アイデア\r\n- アイデアその1-4\r\n- アイデアその2-4\r\n- アイデアその3-4\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-4\r\n- 研究相談-4\r\n\r\n## DONE\r\n- プロトタイプ作成-4\r\n', `updated_at` = '2015-09-13 07:13:29' WHERE `memos`.`id` = 155
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/records
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.3ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 289 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (289, 'old sentence', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#update as HTML
+  Parameters: {"memo"=>{"sentence"=>"# 研究\r\n## アイデア\r\n- アイデアその1-5\r\n- アイデアその2-5\r\n- アイデアその3-5\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-5\r\n- 研究相談-5\r\n\r\n## DONE\r\n- プロトタイプ作成-5\r\n"}, "id"=>"156"}
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 156 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE (`memos`.`record_id` = BINARY 289 AND `memos`.`id` != 156) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `memos` SET `sentence` = '# 研究\r\n## アイデア\r\n- アイデアその1-5\r\n- アイデアその2-5\r\n- アイデアその3-5\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-5\r\n- 研究相談-5\r\n\r\n## DONE\r\n- プロトタイプ作成-5\r\n', `updated_at` = '2015-09-13 07:13:29' WHERE `memos`.`id` = 156
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/records
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.3ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 290 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (290, '# 研究\r\n## アイデア\r\n- アイデアその1-6\r\n- アイデアその2-6\r\n- アイデアその3-6\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-6\r\n- 研究相談-6\r\n\r\n## DONE\r\n- プロトタイプ作成-6\r\n', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#edit as HTML
+  Parameters: {"id"=>"157"}
+  [1m[36mMemo Load (0.2ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 157 LIMIT 1[0m
+  Rendered memos/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.2ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 291 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`record_id`, `sentence`, `created_at`, `updated_at`) VALUES (291, '# 研究\r\n## アイデア\r\n- アイデアその1-7\r\n- アイデアその2-7\r\n- アイデアその3-7\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-7\r\n- 研究相談-7\r\n\r\n## DONE\r\n- プロトタイプ作成-7\r\n', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#edit as HTML
+  Parameters: {"id"=>"158"}
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`id` = 158 LIMIT 1[0m
+  Rendered memos/edit.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#new as HTML
+  Parameters: {"record_id"=>"292"}
+  [1m[36mRecord Load (0.3ms)[0m  [1mSELECT  `records`.* FROM `records` WHERE `records`.`id` = 292 LIMIT 1[0m
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 292 LIMIT 1
+  Rendered memos/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MemosController#new as HTML
+  Parameters: {"record_id"=>"293"}
+  [1m[35mRecord Load (0.3ms)[0m  SELECT  `records`.* FROM `records` WHERE `records`.`id` = 293 LIMIT 1
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 293 LIMIT 1[0m
+  Rendered memos/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#create as HTML
+  Parameters: {"memo"=>{"sentence"=>nil}, "record_id"=>"294"}
+  [1m[36mRecord Load (0.3ms)[0m  [1mSELECT  `records`.* FROM `records` WHERE `records`.`id` = 294 LIMIT 1[0m
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 294 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.2ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 294 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered memos/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM `memos`[0m
+Processing by MemosController#create as HTML
+  Parameters: {"memo"=>{"sentence"=>nil}, "record_id"=>"295"}
+  [1m[35mRecord Load (0.3ms)[0m  SELECT  `records`.* FROM `records` WHERE `records`.`id` = 295 LIMIT 1
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 295 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 295 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered memos/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `memos`[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MemosController#create as HTML
+  Parameters: {"memo"=>{"sentence"=>"# 研究\r\n## アイデア\r\n- アイデアその1-10\r\n- アイデアその2-10\r\n- アイデアその3-10\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-10\r\n- 研究相談-10\r\n\r\n## DONE\r\n- プロトタイプ作成-10\r\n"}, "record_id"=>"296"}
+  [1m[36mRecord Load (0.3ms)[0m  [1mSELECT  `records`.* FROM `records` WHERE `records`.`id` = 296 LIMIT 1[0m
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 296 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.2ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 296 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`sentence`, `record_id`, `created_at`, `updated_at`) VALUES ('# 研究\r\n## アイデア\r\n- アイデアその1-10\r\n- アイデアその2-10\r\n- アイデアその3-10\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-10\r\n- 研究相談-10\r\n\r\n## DONE\r\n- プロトタイプ作成-10\r\n', 296, '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `memos`
+Processing by MemosController#create as HTML
+  Parameters: {"memo"=>{"sentence"=>"# 研究\r\n## アイデア\r\n- アイデアその1-11\r\n- アイデアその2-11\r\n- アイデアその3-11\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-11\r\n- 研究相談-11\r\n\r\n## DONE\r\n- プロトタイプ作成-11\r\n"}, "record_id"=>"297"}
+  [1m[36mRecord Load (0.3ms)[0m  [1mSELECT  `records`.* FROM `records` WHERE `records`.`id` = 297 LIMIT 1[0m
+  [1m[35mMemo Load (0.2ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 297 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.2ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 297 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`sentence`, `record_id`, `created_at`, `updated_at`) VALUES ('# 研究\r\n## アイデア\r\n- アイデアその1-11\r\n- アイデアその2-11\r\n- アイデアその3-11\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-11\r\n- 研究相談-11\r\n\r\n## DONE\r\n- プロトタイプ作成-11\r\n', 297, '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `memos`[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-08 12:10:40', '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mMemo Exists (0.3ms)[0m  SELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 298 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `memos` (`sentence`, `record_id`, `created_at`, `updated_at`) VALUES ('# 研究\r\n## アイデア\r\n- アイデアその1-12\r\n- アイデアその2-12\r\n- アイデアその3-12\r\n - 先生のコメント\r\n > 絵を描いたほうがいい\r\n\r\n## TODO\r\n- 事務処理-12\r\n- 研究相談-12\r\n\r\n## DONE\r\n- プロトタイプ作成-12\r\n', 298, '2015-09-13 07:13:29', '2015-09-13 07:13:29')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `memos`[0m
+Started GET "/" for 127.0.0.1 at 2015-09-13 16:13:29 +0900
+Processing by RecordsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `records`
+  [1m[36mRecord Load (0.3ms)[0m  [1mSELECT  `records`.* FROM `records`  ORDER BY id DESC LIMIT 7 OFFSET 0[0m
+  [1m[35mMemo Load (0.4ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 298 LIMIT 1
+  Rendered records/_record.html.erb (66.9ms)
+  Rendered records/index.html.erb within layouts/application (78.4ms)
+Completed 200 OK in 5280ms (Views: 5267.7ms | ActiveRecord: 1.1ms)
+Started GET "/records/new" for 127.0.0.1 at 2015-09-13 16:13:35 +0900
+Processing by RecordsController#new as HTML
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `records` (`date`, `created_at`, `updated_at`) VALUES ('2015-09-13 07:13:35', '2015-09-13 07:13:35', '2015-09-13 07:13:35')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/records/299/memos/new
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+Started GET "/records/299/memos/new" for 127.0.0.1 at 2015-09-13 16:13:35 +0900
+Processing by MemosController#new as HTML
+  Parameters: {"record_id"=>"299"}
+  [1m[35mRecord Load (0.4ms)[0m  SELECT  `records`.* FROM `records` WHERE `records`.`id` = 299 LIMIT 1
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 299 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered memos/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 1.0ms)
+Started POST "/records/299/memos" for 127.0.0.1 at 2015-09-13 16:13:35 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "memo"=>{"sentence"=>"sentence which is not markdown text"}, "commit"=>"登録する", "record_id"=>"299"}
+  [1m[35mRecord Load (0.4ms)[0m  SELECT  `records`.* FROM `records` WHERE `records`.`id` = 299 LIMIT 1
+  [1m[36mMemo Load (0.4ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 299 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mMemo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `memos` WHERE `memos`.`record_id` = BINARY 299 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `memos` (`sentence`, `record_id`, `created_at`, `updated_at`) VALUES ('sentence which is not markdown text', 299, '2015-09-13 07:13:35', '2015-09-13 07:13:35')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms)
+Started GET "/" for 127.0.0.1 at 2015-09-13 16:13:35 +0900
+Processing by RecordsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `records`
+  [1m[36mRecord Load (0.2ms)[0m  [1mSELECT  `records`.* FROM `records`  ORDER BY id DESC LIMIT 7 OFFSET 0[0m
+  [1m[35mMemo Load (0.3ms)[0m  SELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 299 LIMIT 1
+  [1m[36mMemo Load (0.3ms)[0m  [1mSELECT  `memos`.* FROM `memos` WHERE `memos`.`record_id` = 298 LIMIT 1[0m
+  Rendered records/_record.html.erb (3.5ms)
+  Rendered records/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `memos`
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
